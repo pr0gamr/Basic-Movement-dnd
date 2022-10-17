@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "spr_wallblock",
-    "path": "sprites/spr_wallblock/spr_wallblock.yy",
+    "name": "spr_grass",
+    "path": "sprites/spr_grass/spr_grass.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Object2",
+  "name": "obj_grass",
   "tags": [],
   "resourceType": "GMObject",
 }
