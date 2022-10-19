@@ -3,7 +3,7 @@
     "name": "spr_portalnext",
     "path": "sprites/spr_portalnext/spr_portalnext.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
