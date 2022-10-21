@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "spr_portalnext",
-    "path": "sprites/spr_portalnext/spr_portalnext.yy",
+    "name": "spr_buttonwall1",
+    "path": "sprites/spr_buttonwall1/spr_buttonwall1.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -20,9 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_archEgh","path":"objects/obj_archEgh/obj_archEgh.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -30,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_portalnext",
+  "name": "obj_buttonwall1",
   "tags": [],
   "resourceType": "GMObject",
 }

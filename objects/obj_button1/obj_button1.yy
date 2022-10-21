@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_portalnext",
-    "path": "sprites/spr_portalnext/spr_portalnext.yy",
+    "name": "spr_button1",
+    "path": "sprites/spr_button1/spr_button1.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_portalnext",
+  "name": "obj_button1",
   "tags": [],
   "resourceType": "GMObject",
 }
