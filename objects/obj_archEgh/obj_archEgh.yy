@@ -6,7 +6,7 @@
     "name": "spr_ArchEgg_walk",
     "path": "sprites/spr_ArchEgg_walk/spr_ArchEgg_walk.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
