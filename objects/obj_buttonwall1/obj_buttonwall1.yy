@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_buttonwall1",
   "spriteId": {
     "name": "spr_buttonwall1",
     "path": "sprites/spr_buttonwall1/spr_buttonwall1.yy",
   },
   "solid": true,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_buttonwall1",
-  "tags": [],
-  "resourceType": "GMObject",
 }
