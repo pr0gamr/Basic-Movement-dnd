@@ -1,12 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_button1",
+  "name": "obj_buttonwall2",
   "spriteId": {
-    "name": "spr_button1",
-    "path": "sprites/spr_button1/spr_button1.yy",
+    "name": "spr_buttonwall2",
+    "path": "sprites/spr_buttonwall2/spr_buttonwall2.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -25,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_archEgh_p2","path":"objects/obj_archEgh_p2/obj_archEgh_p2.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
