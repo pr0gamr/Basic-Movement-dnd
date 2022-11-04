@@ -1,5 +1,6 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 3D8C11C2
+/// @DnDHash : 4DBD7AB5
+/// @DnDArgument : "expr" "2"
 /// @DnDArgument : "var" "lewalk"
-lewalk = 0;
+lewalk = 2;

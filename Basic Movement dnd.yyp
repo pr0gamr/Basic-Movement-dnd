@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"spr_buttonwall1","path":"sprites/spr_buttonwall1/spr_buttonwall1.yy",},"order":7,},
     {"id":{"name":"obj_archEgh_p2","path":"objects/obj_archEgh_p2/obj_archEgh_p2.yy",},"order":9,},
+    {"id":{"name":"spr_archegg_jump","path":"sprites/spr_archegg_jump/spr_archegg_jump.yy",},"order":17,},
     {"id":{"name":"spr_cloud_stormy","path":"sprites/spr_cloud_stormy/spr_cloud_stormy.yy",},"order":13,},
     {"id":{"name":"spr_floating_platform","path":"sprites/spr_floating_platform/spr_floating_platform.yy",},"order":3,},
     {"id":{"name":"spr_button2","path":"sprites/spr_button2/spr_button2.yy",},"order":10,},
