@@ -1,3 +1,50 @@
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 169379A4
+/// @DnDArgument : "code" "// inputs$(13_10)keyjump = keyboard_check(cr_uparrow); $(13_10)///------------vertical movement--------------$(13_10)vspd += grv;$(13_10)$(13_10)// colision check$(13_10)$(13_10)if place_meeting(x,y+vspd, obj_grass){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_grass){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)if place_meeting(x,y+vspd, obj_floating_platform){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_floating_platform){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)if place_meeting(x,y+vspd, obj_buttonwall1){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_buttonwall1){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)if place_meeting(x,y+vspd, obj_buttonwall2){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_buttonwall2){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)if place_meeting(x,y+vspd, obj_wallbloc){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_wallbloc){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)$(13_10)// jumping :)$(13_10)$(13_10)$(13_10)y += vspd;"
+// inputs
+keyjump = keyboard_check(cr_uparrow); 
+///------------vertical movement--------------
+vspd += grv;
+
+// colision check
+
+if place_meeting(x,y+vspd, obj_grass){
+	while !place_meeting(x, y + sign(vspd), obj_grass){
+		y += sign(vspd);
+}
+vspd = 0;
+}
+if place_meeting(x,y+vspd, obj_floating_platform){
+	while !place_meeting(x, y + sign(vspd), obj_floating_platform){
+		y += sign(vspd);
+}
+vspd = 0;
+}
+if place_meeting(x,y+vspd, obj_buttonwall1){
+	while !place_meeting(x, y + sign(vspd), obj_buttonwall1){
+		y += sign(vspd);
+}
+vspd = 0;
+}
+if place_meeting(x,y+vspd, obj_buttonwall2){
+	while !place_meeting(x, y + sign(vspd), obj_buttonwall2){
+		y += sign(vspd);
+}
+vspd = 0;
+}
+if place_meeting(x,y+vspd, obj_wallbloc){
+	while !place_meeting(x, y + sign(vspd), obj_wallbloc){
+		y += sign(vspd);
+}
+vspd = 0;
+}
+
+// jumping :)
+
+
+y += vspd;
+
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 557D1E36
