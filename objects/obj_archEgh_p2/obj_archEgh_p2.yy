@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_archEgh_p2",
   "spriteId": {
-    "name": "spr_ArchEgg_walk_p2",
-    "path": "sprites/spr_ArchEgg_walk_p2/spr_ArchEgg_walk_p2.yy",
+    "name": "spr_ArchEgg_idle_p2",
+    "path": "sprites/spr_ArchEgg_idle_p2/spr_ArchEgg_idle_p2.yy",
   },
   "solid": false,
   "visible": true,

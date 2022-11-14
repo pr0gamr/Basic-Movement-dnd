@@ -13,10 +13,4 @@ if(sprite_index == spr_archegg_jump)
 	/// @DnDSaveInfo : "spriteind" "spr_ArchEgg_idle"
 	sprite_index = spr_ArchEgg_idle;
 	image_index = 0;
-
-	/// @DnDAction : YoYo Games.Movement.Set_Speed
-	/// @DnDVersion : 1
-	/// @DnDHash : 13A63937
-	/// @DnDParent : 04065332
-	speed = 0;
 }
