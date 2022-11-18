@@ -6,7 +6,7 @@
     "name": "spr_grass",
     "path": "sprites/spr_grass/spr_grass.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

@@ -1,5 +1,7 @@
-// vertical movement
+/// @description establish variables
+
+hsp = 0;
+vsp = 0;
 grv = 0.3;
-jumpheight = 7;
-vspd = 0;
-isjumping = 0;
+walksp = 4;
+jumpsp = 9;

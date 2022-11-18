@@ -1,68 +1,51 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 169379A4
-/// @DnDArgument : "code" "// inputs$(13_10)keyjump = keyboard_check(vk_space); $(13_10)isgrounded = place_meeting(x, y + 1, obj_grass)$(13_10)isgrounded2 = place_meeting(x, y + 1, obj_floating_platform)$(13_10)isgrounded3 = place_meeting(x, y + 1, obj_wallbloc)$(13_10)isgrounded4 = place_meeting(x, y + 1, obj_buttonwall1)$(13_10)isgrounded5 = place_meeting(x, y + 1, obj_buttonwall2)$(13_10)///------------vertical movement--------------$(13_10)vspd += grv;$(13_10)$(13_10)// colision check$(13_10)$(13_10)if place_meeting(x,y+vspd, obj_grass){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_grass){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)if place_meeting(x,y+vspd, obj_floating_platform){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_floating_platform){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)if place_meeting(x,y+vspd, obj_buttonwall1){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_buttonwall1){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)if place_meeting(x,y+vspd, obj_buttonwall2){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_buttonwall2){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)if place_meeting(x,y+vspd, obj_wallbloc){$(13_10)	while !place_meeting(x, y + sign(vspd), obj_wallbloc){$(13_10)		y += sign(vspd);$(13_10)}$(13_10)vspd = 0;$(13_10)}$(13_10)$(13_10)// jumping :)$(13_10)if isgrounded and keyjump{$(13_10)vspd -= jumpheight$(13_10)}$(13_10)if isgrounded2 and keyjump{$(13_10)vspd -= jumpheight$(13_10)}$(13_10)if isgrounded3 and keyjump{$(13_10)vspd -= jumpheight$(13_10)}$(13_10)if isgrounded4 and keyjump{$(13_10)vspd -= jumpheight$(13_10)}$(13_10)if isgrounded5 and keyjump{$(13_10)vspd -= jumpheight$(13_10)}$(13_10)$(13_10)y += vspd;"
-// inputs
-keyjump = keyboard_check(vk_space); 
-isgrounded = place_meeting(x, y + 1, obj_grass)
-isgrounded2 = place_meeting(x, y + 1, obj_floating_platform)
-isgrounded3 = place_meeting(x, y + 1, obj_wallbloc)
-isgrounded4 = place_meeting(x, y + 1, obj_buttonwall1)
-isgrounded5 = place_meeting(x, y + 1, obj_buttonwall2)
-///------------vertical movement--------------
-vspd += grv;
+/// @DnDArgument : "code" "/// @description core player logic$(13_10)$(13_10)// player inputs$(13_10)$(13_10)key_left = keyboard_check(vk_left);$(13_10)key_right = keyboard_check(vk_right);$(13_10)key_jump = keyboard_check_pressed(vk_up);$(13_10)$(13_10)// movement$(13_10)$(13_10)var _move = key_right - key_left;$(13_10)$(13_10)hsp = _move * walksp;$(13_10)$(13_10)vsp = vsp + grv;$(13_10)$(13_10)if (place_meeting(x,y+1,obj_inviswall)) and (key_jump)$(13_10){$(13_10)vsp = -jumpsp	$(13_10)}$(13_10)$(13_10)//horizontal collision$(13_10)$(13_10)if(place_meeting(x + hsp,y,obj_inviswall))$(13_10){$(13_10)	while (!place_meeting(x+sign(hsp),y,obj_inviswall))$(13_10)	{$(13_10)		x = x + sign(hsp);$(13_10)	}$(13_10)hsp = 0;$(13_10)}$(13_10)x = x + hsp$(13_10)$(13_10)//vertical collision$(13_10)$(13_10)if(place_meeting(x,y+vsp,obj_inviswall))$(13_10){$(13_10)	while (!place_meeting(x,y+sign(vsp),obj_inviswall))$(13_10)	{$(13_10)		y = y + sign(vsp);$(13_10)	}$(13_10)vsp = 0;$(13_10)}$(13_10)y = y + vsp"
+/// @description core player logic
 
-// colision check
+// player inputs
 
-if place_meeting(x,y+vspd, obj_grass){
-	while !place_meeting(x, y + sign(vspd), obj_grass){
-		y += sign(vspd);
-}
-vspd = 0;
-}
-if place_meeting(x,y+vspd, obj_floating_platform){
-	while !place_meeting(x, y + sign(vspd), obj_floating_platform){
-		y += sign(vspd);
-}
-vspd = 0;
-}
-if place_meeting(x,y+vspd, obj_buttonwall1){
-	while !place_meeting(x, y + sign(vspd), obj_buttonwall1){
-		y += sign(vspd);
-}
-vspd = 0;
-}
-if place_meeting(x,y+vspd, obj_buttonwall2){
-	while !place_meeting(x, y + sign(vspd), obj_buttonwall2){
-		y += sign(vspd);
-}
-vspd = 0;
-}
-if place_meeting(x,y+vspd, obj_wallbloc){
-	while !place_meeting(x, y + sign(vspd), obj_wallbloc){
-		y += sign(vspd);
-}
-vspd = 0;
+key_left = keyboard_check(vk_left);
+key_right = keyboard_check(vk_right);
+key_jump = keyboard_check_pressed(vk_up);
+
+// movement
+
+var _move = key_right - key_left;
+
+hsp = _move * walksp;
+
+vsp = vsp + grv;
+
+if (place_meeting(x,y+1,obj_inviswall)) and (key_jump)
+{
+vsp = -jumpsp	
 }
 
-// jumping :)
-if isgrounded and keyjump{
-vspd -= jumpheight
-}
-if isgrounded2 and keyjump{
-vspd -= jumpheight
-}
-if isgrounded3 and keyjump{
-vspd -= jumpheight
-}
-if isgrounded4 and keyjump{
-vspd -= jumpheight
-}
-if isgrounded5 and keyjump{
-vspd -= jumpheight
-}
+//horizontal collision
 
-y += vspd;
+if(place_meeting(x + hsp,y,obj_inviswall))
+{
+	while (!place_meeting(x+sign(hsp),y,obj_inviswall))
+	{
+		x = x + sign(hsp);
+	}
+hsp = 0;
+}
+x = x + hsp
+
+//vertical collision
+
+if(place_meeting(x,y+vsp,obj_inviswall))
+{
+	while (!place_meeting(x,y+sign(vsp),obj_inviswall))
+	{
+		y = y + sign(vsp);
+	}
+vsp = 0;
+}
+y = y + vsp
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1

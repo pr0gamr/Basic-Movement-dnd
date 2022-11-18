@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wallbloc",
+  "name": "obj_inviswall",
   "spriteId": {
-    "name": "spr_wallblock",
-    "path": "sprites/spr_wallblock/spr_wallblock.yy",
+    "name": "spr_inviswalladmin",
+    "path": "sprites/spr_inviswalladmin/spr_inviswalladmin.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,13 +23,10 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":64.0,"y":0.0,},
-    {"x":64.0,"y":64.0,},
-    {"x":0.0,"y":64.0,},
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":true,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
-  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
